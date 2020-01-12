@@ -1,8 +1,7 @@
 {
-  "name": "ts-boilerplate",
-  "version": "0.0.0-development",
-  "description": "Boilerplate for typescript projects powered by eslint and prettier",
-  "main": "index.js",
+  "name": "npm-module-boilerplate",
+  "description": "Typescript npm module boilerplate",
+  "main": "dist/index.js",
   "scripts": {
     "start": "yarn build && node dist/index",
     "build": "tsc",

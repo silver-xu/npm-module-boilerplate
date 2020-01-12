@@ -1,10 +1,10 @@
-# Node.js Typescript Boilerplate [![Build Status](https://travis-ci.org/silver-xu/ts-boilerplate.svg?branch=master)](https://travis-ci.org/silver-xu/ts-boilerplate) [![codecov](https://codecov.io/gh/silver-xu/ts-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/silver-xu/ts-boilerplate) [![greenkeeper](https://badges.greenkeeper.io/silver-xu/ts-boilerplate.svg?style=flat)](https://badges.greenkeeper.io/silver-xu/ts-boilerplate.svg?style=flat)
+# TS Module Boilerplate [![Build Status](https://travis-ci.org/silver-xu/ts-module-boilerplate.svg?branch=master)](https://travis-ci.org/silver-xu/ts-module-boilerplate) [![codecov](https://codecov.io/gh/silver-xu/ts-module-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/silver-xu/ts-module-boilerplate) [![greenkeeper](https://badges.greenkeeper.io/silver-xu/ts-module-boilerplate.svg?style=flat)](https://badges.greenkeeper.io/silver-xu/ts-module-boilerplate.svg?style=flat)
 
-> Typescript boilerplate powered by ESlint, Prettier and Husky.
+> Typescript Module boilerplate powered by ESlint, Prettier, Husky, Semantic-Release and Commitlint
 
 ## Summary
 
-> This repo is built to start Typescript projets quickly without missing the essential development tools and build pipelines.
+> This repo is built to start Typescript module projets quickly without missing the essential development tools and build pipelines.
 
 > Please feel free to fork and use as your own project template.
 
@@ -17,39 +17,5 @@
 - Codecov Integration
 - Jest Integration
 - Linting check @ pre-commit
-
-## Install all dependencies
-
-```
-yarn install
-```
-
-## Build
-
-```
-yarn build
-```
-
-## Start
-
-```
-yarn start
-```
-
-## Test
-
-```
-yarn test
-```
-
-## Linting
-
-```
-yarn lint
-```
-
-## Fix Linting
-
-```
-yarn format
-```
+- Semantic-Release
+- Commitlint

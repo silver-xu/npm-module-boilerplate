@@ -9,6 +9,7 @@ jobs:
         - yarn codecov
 
     - stage: deploy
+      if: branch = master
       script: semantic-release
       before_install:
         - openssl aes-256-cbc -K $encrypted_add538b067d0_key -iv $encrypted_add538b067d0_iv -in git_deploy_key.enc -out /tmp/git_deploy_key -d

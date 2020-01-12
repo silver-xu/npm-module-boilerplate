@@ -1,5 +1,5 @@
 {
-  "name": "npm-module-boilerplate",
+  "name": "ts-module-boilerplate",
   "description": "Typescript npm module boilerplate",
   "main": "dist/index.js",
   "scripts": {
@@ -31,10 +31,14 @@
     }
   },
   "dependencies": {
+    "@semantic-release/commit-analyzer": "^7.0.0",
+    "@semantic-release/git": "^8.0.0",
+    "@semantic-release/npm": "^6.0.0",
+    "@semantic-release/release-notes-generator": "^7.3.5",
     "semantic-release-cli": "^5.2.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/silver-xu/npm-module-boilerplate.git"
+    "url": "https://github.com/silver-xu/ts-module-boilerplate.git"
   }
 }

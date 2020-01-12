@@ -1,23 +1,19 @@
 language: node_js
 node_js:
-- 12.14.1
+  - 12.14.1
 jobs:
   include:
-  - stage: test
-    script: yarn test
-    after_success:
-    - yarn codecov
-  - stage: deploy
-    script: semantic-release
-    before_install:
-    - openssl aes-256-cbc -K $encrypted_7d58c9ef7168_key -iv $encrypted_7d58c9ef7168_iv
-      -in git_deploy_key.enc -out git_deploy_key -d
+    - stage: test
+      script: yarn test
+      after_success:
+        - yarn codecov
+    - stage: deploy
+      script: semantic-release
+      before_install:
+        - openssl aes-256-cbc -K $encrypted_7d58c9ef7168_key -iv $encrypted_7d58c9ef7168_iv -in git_deploy_key.enc -out git_deploy_key -d
 notifications:
   email:
     recipients:
-    - me@silverxu.com
+      - me@silverxu.com
     on_success: always
     on_failure: always
-before_install:
-- openssl aes-256-cbc -K $encrypted_7d58c9ef7168_key -iv $encrypted_7d58c9ef7168_iv
-  -in git_deploy_key.enc -out git_deploy_key -d

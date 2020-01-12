@@ -7,7 +7,7 @@ jobs:
       script: yarn test
       after_success:
         - yarn codecov
-    - stage: deploy
+    - stage: publish
       if: branch = master
       script: semantic-release
       before_install:

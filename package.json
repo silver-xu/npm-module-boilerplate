@@ -43,5 +43,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/silver-xu/ts-module-boilerplate.git"
-  }
+  },
+  "version": "1.0.0"
 }

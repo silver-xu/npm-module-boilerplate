@@ -1,6 +1,6 @@
 {
   "name": "ts-boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Boilerplate for typescript projects powered by eslint and prettier",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
     "test": "jest",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "semantic-release": "semantic-release"
   },
   "author": "Silver Xu",
   "license": "AGPL-3.0-only",
@@ -21,6 +22,7 @@
     "eslint": "^6.8.0",
     "husky": "^4.0.6",
     "jest": "^24.9.0",
+    "semantic-release": "^16.0.1",
     "ts-jest": "^24.3.0",
     "typescript": "^3.7.4"
   },
@@ -28,5 +30,12 @@
     "hooks": {
       "pre-commit": "yarn lint"
     }
+  },
+  "dependencies": {
+    "semantic-release-cli": "^5.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silver-xu/npm-module-boilerplate.git"
   }
 }

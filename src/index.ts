@@ -1,3 +1,3 @@
-export const greet = (name: string): string => `Hello ${name}!`;
+export const greet = (name: string): string => `Hi ${name}!`;
 
-console.log(greet("World"));
+console.log(greet('World'));
